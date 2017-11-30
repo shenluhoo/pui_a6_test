@@ -1,0 +1,152 @@
+/*General website*/
+*{
+  font-family: Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.statement{
+  margin: 0;
+}
+/*screen size*/
+#scr-1,
+#scr-2,
+#scr-3,
+#scr-4,
+#scr-5,
+#scr-6,
+#scr-7,
+#scr-8{
+  height: 100vh;
+  width: 100vw;
+}
+/*background colors*/
+.white-background{
+  background-color: white;
+}
+.yellow-background{
+    background-color: #EACE57;
+}
+.light-blue-background{
+  background-color: #CDE0E0;
+}
+.dark-blue-background{
+  background-color: #4492A0;
+}
+/*jump to top button*/
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 5vh; /* Place the button at the bottom of the page */
+    right: 6vw; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: white; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 2px 6px gray;
+}
+#myBtn {
+  animation: animation2 1500ms linear infinite both;
+}
+
+/* Generated with Bounce.js. Edit at https://goo.gl/8YkE5Z */
+
+@keyframes animation2 {
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2.571, 0, 1); }
+  8.61% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 4.393, 0, 1); }
+  12.91% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5.261, 0, 1); }
+  17.22% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5.467, 0, 1); }
+  28.33% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5.103, 0, 1); }
+  39.44% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 4.969, 0, 1); }
+  61.66% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5.002, 0, 1); }
+  83.98% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5, 0, 1); }
+  100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 5, 0, 1); }
+}
+#myBtn:hover {
+    background-color: gray; /* Add a dark-grey background on hover */
+    color: white;
+}
+/*scr-1 layout*/
+.persona-description{
+  display: block;
+}
+.persona{
+  width: 50vw;
+  height: auto;
+  padding-top: 10vh;
+}
+ul{
+  padding: 0;
+}
+li.statement{
+  font-size: 4vw;
+}
+h1.statement.emphasize{
+  padding-top: 6vw;
+  font-size: 6vw;
+}
+h5.statement{
+  padding-top: 5vw;
+  font-size: 2.5vw;
+}
+
+/*scr-2*/
+#scr-2 .zoom {
+  width: auto;
+}
+img.zoom{
+  height: 100vh;
+  float: right;
+  padding-right: 5vw;
+}
+#scr-2 h5.scroll-down{
+  position: absolute;
+  padding-left: 15vw;
+  padding-top: 40vh;
+}
+/* scr-5 */
+.container{
+  display:block;
+}
+.existing-hurdles{
+  margin: 6vh
+}
+p.existing-hurdles{
+  font-size: 2.5vh;
+}
+h3.title-children{
+  font-size: 3vh;
+}
+/* scr-6*/
+.carousel-image-block{
+  text-align: center;
+  display: block;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.carousel-image{
+  width: 80vw;
+  padding-bottom: 2vh;
+}
+#scr-6 h5.scroll-down{
+  padding-top: 0;
+}
+/* scr-7 */
+.flex-parent{
+  display: block;
+}
+li.bullet-points{
+  font-size: 3.2vw;
+}
+#feasibility-section{
+  padding-top: 3vh;
+}
+#why-section{
+  padding-top: 1vh;
+}
+#scr-7 h5.scroll-down{
+  margin-top: 0;
+}

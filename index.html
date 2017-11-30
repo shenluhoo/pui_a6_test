@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UCRE - Student Activities Research</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- D3 -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- javascript -->
+    <script src="script/jquery.magnify.js"></script>
+    <script src="script/dndTree.js"></script>
+    <script src="script/ucre.js"></script>
+    <!-- Stylesheet link-->
+    <link rel="stylesheet" href="css/magnify.css">
+    <link rel="stylesheet" type="text/css" href="css/ucre.css">
+    <link rel='stylesheet' media='screen and (min-width: 0px) and (max-width: 1000px)' href='css/ucre-sm.css'/>
+    <link rel="stylesheet" type="text/css" href="css/affinity.css">
+    <link rel="stylesheet" href="css/magnify.css">
+  </head>
+  <body>
+    <a href="#scr-1">
+      <button id="myBtn" title="Go to top">Top</button>
+    </a>
+    <div id="scr-1" class="yellow-background">
+      <div class="persona-description">
+        <img class="persona" src="images/persona-confused.png">
+        <ul>
+          <li class="statement">THIS IS JOHN.</li>
+          <li class="statement">HE IS A FRESHMAN.</li>
+          <li class="statement">HE IS LOOKING FOR CLUBS.</li>
+          <li class="statement emphasize">HE IS VERY CONFUSED.</li>
+        </ul>
+      </div>
+      <h1 class="statement emphasize">"THE ONLY PLACE I GET CLUB INFO IS AT THE ACTIVITIES FAIR."</h1>
+      <a href="#scr-2">
+        <h5 class="statement">EXPERIENCE WHAT JOHN NEEDS TO GO THROUGH</h5>
+      </a>
+    </div>
+    <div id="scr-2" class="white-background">
+      <img src="images/sequence.jpg" class="zoom" data-magnify-src="images/sequence-large.jpg">
+      <a href="#scr-3">
+        <h5 class="statement scroll-down">▽</h5>
+      </a>
+    </div>
+    </script>
+    <div id="scr-3" class="light-blue-background">
+      <div class="persona-description">
+        <img class="persona" src="images/persona-confused.png">
+        <ul>
+          <li class="statement">JOHN IS JUST ONE OF THE MANY CARNEGIE MELLON STUDENTS
+                                WHO FACE PROBLEMS JOINING CLUBS.</li>
+        </ul>
+      </div>
+      <a href="#scr-4">
+        <h5 class="statement">EXPLORE WHAT OTHERS HAVE TO SAY ABOUT IT.</h5>
+      </a>
+    </div>
+    <div id="scr-4" class="dark-blue-background">
+      <div id="tree-container">
+      </div>
+    </div>
+    <div id="scr-5" class="light-blue-background">
+      <div class="carousel-title">
+        <img class="title-children" id="existing-hurdles" src="images/existing-hurdles.png">
+        <h3 class="title-children emphasize">Existing Hurdles</h3>
+      </div>
+      <div class="container">
+        <p class="existing-hurdles">"I don't know when and how to use the <span class="emphasize">Bridge</span>, and clubs don't update it much."</p>
+        <p class="existing-hurdles">"I spend <span class="emphasize">a lot of time</span> researching clubs, but it turns out they <span class="emphasize">don't fit</span> my schedule anyways."</p>
+        <p class="existing-hurdles">"I'm new to campus, and it's a <span class="emphasize">hurdle</span> for me to find <span class="emphasize">where</span> meetings take place."</p>
+        <p class="existing-hurdles">"I went to a club event, but it turned out <span class="emphasize">really differently</span> from what I anticipated."</p>
+      </div>
+      <a href="#scr-6">
+        <h5 class="statement scroll-down">▽</h5>
+      </a>
+    </div>
+    <div id="scr-6" class="white-background">
+      <div class="carousel-title">
+        <img class="title-children" id="how-it-works" src="images/how-it-works.png">
+        <h3 class="title-children emphasize">How It Works</h3>
+      </div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/carousel-1.jpg">
+          </div>
+          <div class="item">
+            <img src="images/carousel-2.jpg">
+          </div>
+          <div class="item">
+            <img src="images/carousel-3.jpg">
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" id="carousel-control-left" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" id="carousel-control-right" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+      <a href="#scr-7">
+        <h5 class="statement scroll-down">▽</h5>
+      </a>
+    </div>
+    <div id="scr-7" class="yellow-background">
+      <div class="flex-parent">
+        <div class="flex-child" id="why-section">
+          <div class="carousel-title">
+            <img class="title-children" id="why-it-works" src="images/why-it-works.png">
+            <h3 class="title-children emphasize">Why It Works</h3>
+          </div>
+          <ul class="bullet-section">
+            <li class="bullet-points">Every CMU students uses SIO and Canvas already.</li>
+            <li class="bullet-points">Pushes reminders at the right time.</li>
+            <li class="bullet-points">Prioritizes two important pieces of information, timing and events, that influence club membership.</li>
+            <li class="bullet-points">Displays an overview of all club schedules at once, so students don’t have to make uninformed tradeoffs.</li>
+          </ul>
+        </div>
+        <div class="flex-child" id="feasibility-section">
+          <div class="carousel-title">
+            <img class="title-children" id="feasibility" src="images/feasibility.png">
+            <h3 class="title-children emphasize">Feasibility</h3>
+          </div>
+          <ul>
+            <li class="bullet-points">Can plug into existing Bridge content.</li>
+            <li class="bullet-points">Easy for people to export and import calendar data of their own choosing.</li>
+            <li class="bullet-points">Requires minimal technical modification to Canvas/SIO.</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#scr-8">
+        <h5 class="statement scroll-down">▽</h5>
+      </a>
+    </div>
+    <div id="scr-8" class="dark-blue-background">
+      <div class="persona-description">
+        <img class="persona" src="images/persona-happy.png">
+        <ul class="bullet-section">
+          <li class="statement">THIS IS JOHN.</li>
+          <li class="statement">HE IS A FRESHMAN.</li>
+          <li class="statement">HE HAS JOINED GREAT CLUBS.</li>
+          <li class="statement emphasize">HE IS HAVING SO MUCH FUN.</li>
+        </ul>
+      </div>
+      <h1 class="statement emphasize">"I LOVE KNOWING THAT I CAN PLAN WHAT MATTERS MOST TO ME."</h1>
+    </div>
+  </body>
+</html>
